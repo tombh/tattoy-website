@@ -1,0 +1,22 @@
+.logo {
+  $bp-icon: "(min-width: 440px)";
+
+  height: 28px;
+  width: auto;
+
+  @media #{$bp-desktop-up} {
+    height: 40px;
+  }
+}
+
+a.header__logo {
+  font-size: 7px;
+  color: var(--color-white);
+  font-weight: bolder;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--color-black);
+  }
+}

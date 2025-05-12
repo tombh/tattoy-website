@@ -1,0 +1,51 @@
+{% extends "layouts/base.html" %} {% block head_extensions %}
+<meta
+  name="description"
+  content="Text-based terminal compositor"
+>
+{% endblock head_extensions %} {% block content %}
+<div id="home-logo">
+  {% include "logo_full.html" %}
+</div>
+<h2 id="home-subtitle">A Text-Based Compositor For Modern Terminals</h2>
+<div id="home-content">
+  <div class="screenshot">
+    <div class="window">
+      <div class="winhead">
+        <div class="winbutton">
+          <div class="close"></div>
+          <div class="min"></div>
+          <div class="max"></div>
+        </div>
+        <div class="title">window</div>
+      </div>
+      <div class="winbody">
+        <img src="assets/screenshots/bloom_minimap.webp" alt="Screenshot of Tattoy with bloom filter and minimap">
+      </div>
+    </div>
+    <div class="screenshot-caption">
+      Tattoy with a GPU-rendered bloom shader and live-updating minimap of the TTY scrollback.
+    </div>
+  </div>
+  <h3>
+    Features
+  </h3>
+  <ul>
+    <li>
+      Tattoy works on all modern terminals and all operating systems (Powershell currently has some bugs)
+    </li>
+    <li>
+      Auto text contrast
+    </li>
+    <li>
+      Plugin architecture
+    </li>
+    <li>
+      Second terminal in background
+    </li>
+    <li>
+      Transparent scrollbar
+    </li>
+  </ul>
+</div>
+{% endblock content %}

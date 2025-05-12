@@ -1,0 +1,15 @@
+{% macro page_header_message(section_or_page) %}
+  {% if section_or_page %}
+    {% if section_or_page.extra.header_message %}
+      {{ section_or_page.extra.header_message }}
+    {% elif section_or_page.path is starting_with("/docs") %}
+      Documentation
+    {% elif section_or_page.path is starting_with("/download") %}
+      Downloads
+    {% elif section_or_page.path is starting_with("/news/") %}
+      News
+    {% elif section_or_page.path == "/" %}
+      Tattoy
+    {% endif %}
+  {% endif %}
+{% endmacro page_header_message %}

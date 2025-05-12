@@ -1,0 +1,31 @@
+#home-logo {
+  text-align: center;
+  font-size: 0.5em;
+
+  @media #{$bp-phone-landscape-up} {
+    font-size: 0.8em;
+  }
+
+  @media #{$bp-tablet-portrait-up} {
+    font-size: 1.0em;
+  }
+}
+
+#home-subtitle {
+  text-align: center;
+}
+
+#home-content {
+  margin-top: 5em;
+
+  img {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.screenshot-caption {
+  margin-top: 1em;
+  text-align: center;
+}
