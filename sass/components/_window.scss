@@ -9,8 +9,7 @@
 
 .winhead {
   height: 35px;
-  background: rgb(244, 244, 244);
-  border-bottom: 0.5px solid rgba(162, 163, 164, .4);
+  background: #c1c5ff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: flex;
@@ -53,9 +52,7 @@
 
 .winbody {
   height: 100%;
-  background: rgb(231, 231, 231);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  line-height: 300px;
-  text-align: center;
+  padding: 8px;
 }

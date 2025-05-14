@@ -9,14 +9,26 @@
   }
 }
 
-a.header__logo {
-  font-size: 7px;
+.header__logo {
   color: var(--color-white);
-  font-weight: bolder;
   text-decoration: none;
+
+  pre {
+    font-size: 7px;
+  }
 
   &:hover {
     text-decoration: none;
     color: var(--color-black);
   }
+}
+
+#header-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+#header-logo {
+  font-weight: bolder;
+  margin-right: 1em;
 }

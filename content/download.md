@@ -16,7 +16,7 @@ Sections for each distro that has `tattoy` in their package manager.
 
 ...
 
-## Binaries and checksums
+## Binaries and Checksums
 
 * aarch64
 * x86

@@ -1,8 +1,6 @@
 +++
-title = "Tattoy Documentation"
+title = "Documentation"
 template = "docs.html"
 [extra]
-header_message = "Docs"
+weight = 0
 +++
-
-Welcome to the Tattoy documentation 🤓

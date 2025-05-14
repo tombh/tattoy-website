@@ -1,11 +1,12 @@
+@use 'sass:color';
+
 $content-font-size: 1.22rem;
 
 a {
-  color: var(--color-tattoy-blue);
-  text-decoration: none;
+  color: color.adjust-color($color-tattoy-blue, $lightness: 30%);
 
   &:hover {
-    text-decoration: underline;
+    color: color.adjust-color($color-tattoy-blue, $lightness: 50%);
   }
 }
 
@@ -107,20 +108,25 @@ a {
     color: var(--media-content-button-text-color);
   }
 
-  a {
-    text-decoration: none;
-    color: var(--media-content-link-color);
-  }
-
-  a:hover {
-    text-shadow: 0 0 0.9px currentColor, 0 0 0.9px currentColor;
-  }
-
   pre code {
     padding-bottom: 0px;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
   }
+}
 
+p.paragraph-left {
+  float: left
+}
+
+.screenshot-row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1em;
+  column-gap: 1em;
+
+  .window {
+    justify-content: space-between;
+  }
 }
